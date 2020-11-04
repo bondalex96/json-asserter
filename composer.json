@@ -1,0 +1,20 @@
+{
+    "name": "bondalex96/json-response-asserter",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Bondarenko Alexander",
+            "email": "bondalex96@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4.0",
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bondalex96\\ResponseAsserter\\": "src/",
+            "Bondalex96\\Tests\\": "tests/"}
+    },
+    "description": ""
+}
