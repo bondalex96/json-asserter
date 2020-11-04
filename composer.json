@@ -1,5 +1,5 @@
 {
-    "name": "bondalex96/json-response-asserter",
+    "name": "bondalex96/json-asserter",
     "type": "library",
     "authors": [
         {
@@ -8,13 +8,21 @@
         }
     ],
     "require": {
-        "php": "^7.4.0",
-        "phpunit/phpunit": "^9.4"
+        "php": "^7.2.0",
+        "phpunit/phpunit": "^8.5",
+        "coduo/php-matcher": "^5.0",
+        "phpspec/php-diff": "^1.1",
+        "ext-json": "*"
     },
     "autoload": {
         "psr-4": {
-            "Bondalex96\\ResponseAsserter\\": "src/",
-            "Bondalex96\\Tests\\": "tests/"}
+            "Bondalex96\\JsonAsserter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bondalex96\\Tests\\": "tests/"
+        }
     },
     "description": ""
 }
