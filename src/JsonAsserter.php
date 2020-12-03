@@ -10,8 +10,8 @@ use PHPUnit\Framework\Assert;
 
 final class JsonAsserter extends Assert
 {
-    private /*Matcher*/ $matcher;
-    private /*JsonPrettyfier*/ $jsonPrettyfier;
+    private Matcher $matcher;
+    private JsonPrettyfier $jsonPrettyfier;
 
     public function __construct()
     {

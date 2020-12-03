@@ -13,7 +13,7 @@ use PHPUnit\Framework\TestCase;
  */
 final class AssertJsonContentTest extends TestCase
 {
-    private /*JsonAsserter*/ $jsonAsserter;
+    private JsonAsserter $jsonAsserter;
 
     public function setUp(): void
     {

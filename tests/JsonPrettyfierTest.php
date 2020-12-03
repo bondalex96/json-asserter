@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 final class JsonPrettyfierTest extends TestCase
 {
-    private /*JsonPrettyfier*/ $jsonPrettyfier;
+    private JsonPrettyfier $jsonPrettyfier;
 
     public function setUp(): void
     {

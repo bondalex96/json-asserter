@@ -23,7 +23,7 @@ use Coduo\PHPMatcher\Parser;
 
 final class CoduoMatcherFactory
 {
-    private /*Backtrace*/ $backtrace;
+    private Backtrace $backtrace;
 
     public function __construct()
     {
