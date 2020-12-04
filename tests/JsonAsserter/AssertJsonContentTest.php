@@ -233,4 +233,16 @@ EOF;
             '{"item": "@*@"}'
         );
     }
+
+
+    /**
+     * @doesNotPerformAssertions
+     */
+    public function testWithNullValueInJson(): void
+    {
+        $this->jsonAsserter->assertJsonContent(
+            '{"item":null, "data":500}',
+            '{"item":null, "data":"@integer@"}'
+        );
+    }
 }
