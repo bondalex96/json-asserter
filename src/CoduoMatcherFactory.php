@@ -13,6 +13,7 @@ use Coduo\PHPMatcher\Matcher\ChainMatcher;
 use Coduo\PHPMatcher\Matcher\DoubleMatcher;
 use Coduo\PHPMatcher\Matcher\IntegerMatcher;
 use Coduo\PHPMatcher\Matcher\JsonMatcher;
+use Coduo\PHPMatcher\Matcher\NullMatcher;
 use Coduo\PHPMatcher\Matcher\NumberMatcher;
 use Coduo\PHPMatcher\Matcher\OrMatcher;
 use Coduo\PHPMatcher\Matcher\ScalarMatcher;
@@ -68,6 +69,7 @@ final class CoduoMatcherFactory
             'name',
             $backTrace,
             [
+                new NullMatcher($backTrace),
                 new StringMatcher($backTrace, $parser),
                 new IntegerMatcher($backTrace, $parser),
                 new BooleanMatcher($backTrace, $parser),
