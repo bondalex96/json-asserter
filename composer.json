@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "php": "^7.4.0",
+        "php": ">=7.4.0",
         "phpunit/phpunit": "^9.4",
         "coduo/php-matcher": "^5.0",
         "phpspec/php-diff": "^1.1",
